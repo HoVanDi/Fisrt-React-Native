@@ -1,14 +1,23 @@
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+
+const Stack = createStackNavigator();
+
 import React from "react";
-// import Header from "../components/header";
-// import SignUp from "../components/LogIn";
-import SignIn from "../components/SignUp";
+import Header from "../components/Header";
+import SignUp from "../components/SignUp";
+import LogIn from "../components/LogIn";
 
 const HomeScreen = () => {
     return (
-        // <Header />
-        // <SignUp></SignUp>
-        <SignIn></SignIn>
+    <NavigationContainer>
+        <Stack.Navigator initialRouteName="Header">
+            <Stack.Screen name="Header" component={Header} />
+            <Stack.Screen name="SignUp" component={SignUp} />
+            <Stack.Screen name="LogIn" component={LogIn} />
+        </Stack.Navigator>
+    </NavigationContainer>
     )
 }
-//https://snack.expo.dev/@purplecode/imagebackground?platform=web
+
 export default HomeScreen;

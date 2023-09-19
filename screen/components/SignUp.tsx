@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, StyleSheet, ImageBackground, Image, TextInput } from "react-native";
-const header = () => {
+const SignUp = () => {
     const background = require('../../assets/13promaxsignup.png')
     return (
         <ImageBackground
@@ -186,4 +186,4 @@ const styles = StyleSheet.create({
         height: '100%',
     },
 });
-export default header;
+export default SignUp;

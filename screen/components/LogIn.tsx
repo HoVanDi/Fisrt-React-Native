@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, StyleSheet, ImageBackground, Image } from "react-native";
-const header = () => {
+const LogIn = () => {
     const background = require('../../assets/13promaxlogin.png')
     return (
         <ImageBackground
@@ -151,4 +151,4 @@ const styles = StyleSheet.create({
         height: '100%',
     },
 });
-export default header;
+export default LogIn;
