@@ -30,6 +30,7 @@ const styles = StyleSheet.create({
         flex: 1,
         width: 264,
         fontWeight: 734,
+        marginBottom:150
     },
     text: {
         fontSize: 40, 
@@ -42,10 +43,11 @@ const styles = StyleSheet.create({
         flex: 1,
         fontSize: 20,
         color: '#1E1E1E',
+        marginBottom: -60
     },
 
     btn: {
-        marginTop:100,
+        marginTop: 140,
         fontWeight: 734,
         flex: 1,
         alignItems:'center',
@@ -70,7 +72,7 @@ const styles = StyleSheet.create({
     },
 
     textMassege: {
-        marginTop: -50,
+        marginTop: -70,
         color: '#fff',
     },
 
